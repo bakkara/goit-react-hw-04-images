@@ -77,7 +77,6 @@ export const App =() => {
     setTag('');
   }
 
-
     return (
       <Layout>
         <SearchBar onSubmit={onSearch} />
