@@ -31,7 +31,7 @@ export const App =() => {
   } 
 
   const handlerLoadMore = () => {
-    setPage(prevPage => prevPage.page + 1)
+    setPage(page + 1);
   }
 
   useEffect(() => {
