@@ -18,7 +18,6 @@ export const App =() => {
   const [error, setError] = useState(false)
   const [loadMore, setLoadMore] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  /* const [totalHits, setTotalHits] = useState(0) */
   const [largeImageURL, setLargeImageURL] = useState('')
   const [tag, setTag] = useState('')
 
@@ -34,7 +33,7 @@ export const App =() => {
   const handlerLoadMore = () => {
     setPage(prevPage => prevPage.page + 1)
   }
-  /* useEffect(() => { if (!query) return; }, [query, page]); */
+
   useEffect(() => {
     if (!query) return;
   async function searchImage() { 
